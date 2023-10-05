@@ -303,7 +303,7 @@ def _issubclass(a: Any, b: Any) -> bool:
     return False
 
 
-def issubdtype(a: DTypeLike, b: DTypeLike) -> bool:
+def issubdtype(a: DTypeLike | None, b: DTypeLike | None) -> bool:
   """Returns True if first argument is a typecode lower/equal in type hierarchy.
 
   This is like :func:`numpy.issubdtype`, but can handle dtype extensions such as
